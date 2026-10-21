@@ -1,0 +1,4 @@
+# Shared KC coupling network and numerics (paper Appendix A, "Implementation details").
+coupling_mlp: {layers: [17, 64, 32, 1], symmetric_in_ij: true, input: ["||z_i - z_j||^2", action], trainable_params: 3963}
+numerics: {eigendecomposition_dtype: float64, rollout_dtype: float32}
+hardware: "NVIDIA RTX PRO 6000 (96 GB)"

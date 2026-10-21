@@ -1,0 +1,7 @@
+# Environment that produced all results (single environment, Python 3.10).
+# torch 2.11.0 was built for CUDA 12.8. Install a build matching your CUDA, for example:
+#   pip install torch==2.11.0 --extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0
+numpy==2.2.6
+h5py==3.16.0
+huggingface_hub==1.8.0

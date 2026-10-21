@@ -1,0 +1,12 @@
+name: kc
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - torch==2.11.0           # +cu128 wheel; CUDA 12.8 (measured on NVIDIA RTX PRO 6000)
+    - numpy==1.26.4
+    - scipy==1.13.1
+    - h5py==3.11.0
+    - pyyaml==6.0.1
+    - pytest==8.2.0

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "Beyond Unit-Circle Eigenvalues: Invariant Bases for Stable State Space Dynamics"
+authors:
+  - family-names: Zhu
+    given-names: Jiaqian
+  - family-names: Zhang
+    given-names: Yang
+  - family-names: Ding
+    given-names: Junhua
+  - family-names: Yu
+    given-names: Xiaowei
+preferred-citation:
+  type: conference-paper
+  title: "Beyond Unit-Circle Eigenvalues: Invariant Bases for Stable State Space Dynamics"
+  year: 2026
+  collection-title: "Advances in Neural Information Processing Systems (NeurIPS)"
+repository-code: "https://github.com/Jiaqian-Janelle/NeurIPS26-Kronecker-Cayley-Stable-State-Space-Dynamics"

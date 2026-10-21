@@ -1,0 +1,10 @@
+# Grid PDE benchmarks (tab:q1). N=64 patches (8x8), m=8.
+model: {N_patches: 64, m: 8, encoder: per_patch_mlp, decoder: tied_per_patch_linear}
+optim: {name: adam, lr: 1.0e-3, batch_size: 32}
+epochs: {dam_break: 100, advection: 100, allen_cahn: 100, sphere: 150}
+rollout_steps: {dam_break: 100, allen_cahn: 100, advection: 200, sphere: 86}
+decoder_override: {sphere: tied_cos}   # per-patch 1/cos(lat) readout
+determinism: {fno_cpfno_advection: "torch.use_deterministic_algorithms(True)"}
+sphere_reposing: {trajectories: 500, train: 400, test: 100, disjoint_ic_seeds: true,
+                  input: "all 5 channels at frame 1", target: "pressure anomaly",
+                  readout_scale: "inverse patch-mean cos(lat)"}

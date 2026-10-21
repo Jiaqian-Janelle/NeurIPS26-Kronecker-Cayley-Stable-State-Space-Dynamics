@@ -1,0 +1,6 @@
+# EGNN N-body (tab:q5 / Table 3). charged N=5 (3d), gravity N=10 (3d), spring N=5 (2d).
+model: {m: 8, encoder: per_particle_mlp, decoder: tied_linear}
+optim: {name: adam, lr: 1.0e-3, batch_size: 32, epochs: 200}
+rollout_steps: 1000
+split: {train: 3000, val: 2000, test: 2000}
+protocol2: {rollout_dtype: float32, kc_eigendecomp_dtype: float64}
